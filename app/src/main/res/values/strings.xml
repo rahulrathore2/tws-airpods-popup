@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TWS AirPods Pop-up</string>
+    <string name="title_setup">TWS Pop-up Setup</string>
+    <string name="subtitle_setup">Configure your earbuds overlay animation</string>
+
+    <string name="section_permissions">Permissions Required</string>
+    <string name="perm_overlay">Display Over Other Apps</string>
+    <string name="perm_overlay_desc">Allows showing the AirPods-style animated card when earbuds connect.</string>
+    <string name="perm_bluetooth">Bluetooth Access</string>
+    <string name="perm_bluetooth_desc">Required to detect connected devices and read battery level.</string>
+    <string name="perm_notifications">Notifications</string>
+    <string name="perm_notifications_desc">Required for background monitor service on Android 13+.</string>
+    <string name="grant_permission">Grant</string>
+    <string name="permission_granted">Granted ✓</string>
+
+    <string name="section_device">Target Bluetooth Device</string>
+    <string name="no_paired_devices">No paired Bluetooth devices found. Please pair your earbuds first in Android Settings.</string>
+    <string name="refresh_devices">Refresh Devices</string>
+    <string name="selected_mac_label">Selected MAC Address: %1$s</string>
+    <string name="no_device_selected">No device selected yet</string>
+
+    <string name="section_image">Custom Earbuds Image</string>
+    <string name="image_desc">Pick a transparent PNG of your earbuds from your gallery.</string>
+    <string name="btn_pick_image">Choose Custom PNG</string>
+    <string name="btn_reset_image">Reset to Default</string>
+
+    <string name="section_service">Background Service</string>
+    <string name="service_desc">Keeps monitoring in the background even when this app is closed.</string>
+    <string name="service_running">Service Running</string>
+    <string name="service_stopped">Service Stopped</string>
+    <string name="btn_start_service">Start Monitoring</string>
+    <string name="btn_stop_service">Stop Monitoring</string>
+
+    <string name="btn_test_popup">Preview Pop-up Now</string>
+
+    <string name="popup_connected">Connected</string>
+    <string name="popup_done">Done</string>
+    <string name="popup_battery">Battery</string>
+    <string name="notification_channel_name">TWS Connection Monitor</string>
+    <string name="notification_title">Earbuds Monitor Active</string>
+    <string name="notification_text">Listening for TWS connection...</string>
+</resources>

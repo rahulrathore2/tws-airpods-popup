@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Theme Colors -->
+    <color name="primary">#007AFF</color>
+    <color name="primary_dark">#0056B3</color>
+    <color name="accent">#5856D6</color>
+
+    <!-- Backgrounds -->
+    <color name="window_background">#F2F2F7</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_card_border">#E5E5EA</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1C1C1E</color>
+    <color name="text_secondary">#8E8E93</color>
+    <color name="text_tertiary">#C7C7CC</color>
+
+    <!-- Status Colors -->
+    <color name="status_connected">#34C759</color>
+    <color name="status_connected_bg">#1534C759</color>
+    <color name="status_disconnected">#FF3B30</color>
+
+    <!-- iOS Button & Card Colors -->
+    <color name="ios_button_bg">#1C1C1E</color>
+    <color name="ios_button_text">#FFFFFF</color>
+    <color name="ios_card_bg">#FFFFFF</color>
+    <color name="ios_card_shadow">#33000000</color>
+    <color name="battery_fill">#34C759</color>
+</resources>

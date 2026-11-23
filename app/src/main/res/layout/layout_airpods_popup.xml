@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popupRootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="24dp"
+    android:clipToPadding="false"
+    android:clipChildren="false">
+
+    <!-- Card Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="16dp"
+        app:cardBackgroundColor="@color/ios_card_bg"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="24dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="24dp">
+
+            <!-- Small Grab Handle / Apple indicator -->
+            <View
+                android:layout_width="36dp"
+                android:layout_height="4dp"
+                android:background="@drawable/bg_badge_connected"
+                android:backgroundTint="#D1D1D6"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Earbuds Image Container -->
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/imgEarbuds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Earbuds"
+                    android:src="@drawable/ic_earbuds_default" />
+            </FrameLayout>
+
+            <!-- Device Name -->
+            <TextView
+                android:id="@+id/txtDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AirPods Pro"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- Status & Battery Row -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Connected Badge -->
+                <LinearLayout
+                    android:id="@+id/badgeConnected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_badge_connected"
+                    android:paddingStart="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp">
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:src="@drawable/ic_dot_green"
+                        android:contentDescription="Connected status indicator" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/popup_connected"
+                        android:textColor="@color/status_connected"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Battery Badge -->
+                <LinearLayout
+                    android:id="@+id/badgeBattery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_badge_connected"
+                    android:backgroundTint="#F2F2F7"
+                    android:paddingStart="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="6dp">
+
+                    <ImageView
+                        android:id="@+id/imgBatteryIcon"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_battery"
+                        android:contentDescription="Battery Level" />
+
+                    <TextView
+                        android:id="@+id/txtBatteryLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="100%"
+                        android:textColor="@color/text_primary"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Done Button -->
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_button_done"
+                android:text="@string/popup_done"
+                android:textAllCaps="false"
+                android:textColor="@color/ios_button_text"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
